@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Rajdhani', rel='stylesheet', type='text/css')
+    link(href='steez.css', rel='stylesheet', type='text/css')
+    title Custom Form Controls
+  body
+    h1 Custom Form Controls
+    h2 Checkboxes
+    div.checkboxes
+      div.field
+        div.checkbox(tabindex="0", role="checkbox", aria-checked="false" aria-labelledby="check-label-1")
+          i.fa.fa-square-o
+        div.label#check-label-1 Checkbox 1
+      div.field
+        div.checkbox(tabindex="0", role="checkbox", aria-checked="false" aria-labelledby="check-label-2")
+          i.fa.fa-square-o
+        div.label#check-label-2 Checkbox 2
+      div.field
+        div.checkbox(tabindex="0", role="checkbox", aria-checked="false" aria-labelledby="check-label-3")
+          i.fa.fa-square-o
+        div.label#check-label-3 Checkbox 3
+      div.field
+        div.checkbox(tabindex="0", role="checkbox", aria-checked="false" aria-labelledby="check-label-4")
+          i.fa.fa-square-o
+        div.label#check-label-4 Checkbox 4
+    h2 Radios
+    div.radios(role="radiogroup")
+      div.field
+        div.radio(tabindex="0", role="radio", aria-checked="true", aria-labelledby="radio-label-1")
+          i.fa.fa-dot-circle-o
+        div.label#radio-label-1 Radio 1
+      div.field
+        div.radio(tabindex="-1", role="radio", aria-checked="false", aria-labelledby="radio-label-2")
+          i.fa.fa-circle-o
+        div.label#radio-label-2 Radio 2
+      div.field
+        div.radio(tabindex="-1", role="radio", aria-checked="false", aria-labelledby="radio-label-3")
+          i.fa.fa-circle-o
+        div.label#radio-label-3 Radio 3
+      div.field
+        div.radio(tabindex="-1", role="radio", aria-checked="false", aria-labelledby="radio-label-4")
+          i.fa.fa-circle-o
+        div.label#radio-label-4 Radio 4
+      div.switches
+        div.field
+          div.switch-cage
+            input(type="radio", name="on-off", value="on", id="switch-on", class="bg-input", checked)
+            label(for="switch-on") On
+            input(type="radio", name="on-off", value="off", id="switch-off", class="bg-input")
+            label(for="switch-off") Off
+            div.switch
+
+
+      script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js")
+      script(src="cfc.js")
